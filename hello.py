@@ -23,3 +23,13 @@ def show_post(post_id):
 def show_subpath(subpath):
 	#show the subpath after /path/
 	return 'Subpath %s' % subpath
+
+@app.route('/projects/')
+def projects():
+	# Url for "/projects/" is like a directory 
+	return 'The project page'
+
+@app.route('/about')
+def about():
+	# Url for "about" without slash is similar to a filename
+	return 'The about page'
